@@ -52,7 +52,7 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
         </div>
       </div>
 
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden h-[1.5em] flex items-center justify-center">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden h-[3em] flex items-center justify-center px-4 py-8">
         <AnimatePresence mode="popLayout">
           <motion.div
             key={wordIndex}
