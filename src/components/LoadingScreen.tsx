@@ -52,7 +52,7 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
         </div>
       </div>
 
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden h-[1.2em]">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden h-[1.5em] flex items-center justify-center">
         <AnimatePresence mode="popLayout">
           <motion.div
             key={wordIndex}
@@ -60,7 +60,7 @@ export function LoadingScreen({ onComplete }: { onComplete: () => void }) {
             animate={{ y: "0%" }}
             exit={{ y: "-100%" }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="font-instrument text-5xl md:text-7xl lg:text-8xl italic"
+            className="font-instrument text-5xl md:text-7xl lg:text-8xl italic leading-none"
           >
             {words[wordIndex]}
           </motion.div>
